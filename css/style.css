@@ -1,0 +1,971 @@
+*{margin: 0; padding: 0; box-sizing: border-box;}
+li{list-style: none;}
+a {
+    color: #e5dfd9;
+    font-size: 12px;
+    text-decoration: none;
+}
+#nav a {
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: blueviolet;
+    color: #fff;
+    line-height: 50px;
+    text-align: center;
+    text-decoration: none;
+    position: absolute;
+    top: 50%;
+    left : 50%;
+    transform: translateY(-50%);    
+}
+#nav .next {
+    margin-left: calc(20% + 25px);
+}
+#nav .prev {
+    margin-left: calc(-20% - 75px);
+}
+#first{
+    width: 100%;
+    height: 130px;
+    background: linear-gradient(to bottom,black,transparent);
+    opacity: 1;
+    color: white;
+    z-index: 100;
+}
+#up {
+    width: 100%;
+    height: 75px;
+    display: flex;
+}
+.f-ul {
+    display: flex;
+    width: 20%;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+}
+.f-ul > li {
+    margin: 5px;
+}
+#up > h1{
+    width: 80%;
+    height: 60px;
+    font-size: 35px;
+    text-align: center;
+    align-self: center;
+}
+.s-ul {
+    width: 20%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.s-ul > li {
+    margin: 5px;
+}
+#down {
+    width: 1200px;
+    margin: 0 auto;
+    height: 80px;
+}
+.t-ul {
+    display: flex;
+    margin: 0 auto;
+    width: 1000px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.t-ul > li{
+    padding: 10px;
+}
+header {
+    background-image: url("../imgs/dd.jpg");
+    width: 100%;
+    height: 753px;
+    position: relative;
+}
+#second {
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    top: 350px;
+}
+#second > h1 {
+    position: absolute;
+    top: 45px;
+    font-size: 55px;
+    color: white;
+    left: 37%;
+}
+.box {
+    display: inline-block;
+    background-color: #0003;
+    width: 130px;
+    height: 50px;
+    color: white;
+    border-color: white;
+    border: 3px solid white;
+    font-size: 16px;
+    line-height: 40px;
+    text-align: center;
+    top: 130px;
+    position: absolute;
+    left: 47%;
+}
+.box:hover {
+    background-color: #313131;
+}
+#main {
+    position: relative;
+    width: 100%;
+    height: 5480px;
+}
+#f-sec {
+    position: absolute;
+    top: 15px;
+    left: 1%;
+    background-color: #e7e7e7;
+    width: 98%;
+    height: 900px;
+}
+.photo {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.photo1 {
+    position: absolute;
+    width: 100%;
+    height: 750px;
+}
+.pic1 {
+    width: 690px;
+    height: 690px;
+    left: 31.5%;
+    position: absolute;
+}
+.pic1 > img{
+    width: 690px;
+    height: 690px;
+}
+.f-p {
+    width: 100%;
+    height: 43px;
+    position: absolute;
+    top: 570px;
+    font-size: 16px;
+    letter-spacing: 1.65px;
+    left: 10px;
+    font-weight: 200;
+    font-style: normal;
+    color: #4b4b4b;
+}
+.f-h {
+    width: 100%;
+    height: 35px;
+    position: absolute;
+    top: 600px;
+    left: 20px;
+}
+.f-h > h2 {
+    font-size: 30px;
+    letter-spacing: 4px;
+    font-variant-ligatures: none;
+    font-weight: 200;
+    font-style: normal;
+    color: #4b4b4b;
+}
+.s-box1 {
+    display: inline-block;
+    background-color: black;
+    width: 150px;
+    height: 40px;
+    color: white;
+    position: absolute;
+    top: 685px;
+    left: 46.2%;
+}
+.s-box1  > p{
+    letter-spacing: 1px;
+    font-size: 12px;
+    position: absolute;
+    top: 25%;
+    left: 26%;
+}
+.s-box1:hover {
+    background-color: #313131;
+}
+.f-i {
+    position: absolute;
+    top: 648px;
+    left: 50%;
+}
+/* .photo2 {
+    position: absolute;
+    width: 100%;
+    height: 750px;
+}
+.pic2 {
+    width: 700px;
+    height: 700px;
+    left: 31.5%;
+    position: absolute;
+}
+.s-p {
+    width: 100%;
+    height: 43px;
+    position: absolute;
+    top: 570px;
+    font-size: 16px;
+    letter-spacing: 1.65px;
+    left: 10px;
+    font-weight: 200;
+    font-style: normal;
+    color: #4b4b4b;
+}
+.s-h {
+    width: 100%;
+    height: 35px;
+    position: absolute;
+    top: 600px;
+    left: 0;
+}
+.s-h > h2 {
+    font-size: 30px;
+    letter-spacing: 4px;
+    font-variant-ligatures: none;
+    font-weight: 200;
+    font-style: normal;
+    color: #4b4b4b;
+}
+.s-box2 {
+    display: inline-block;
+    background-color: black;
+    width: 150px;
+    height: 40px;
+    color: white;
+    position: absolute;
+    top: 685px;
+    left: 46.5%;
+}
+.s-box2  > p{
+    position: absolute;
+    top: 28%;
+    left: 28%;
+}
+.f-i1 {
+    position: absolute;
+    top: 648px;
+    left: 50%;
+}
+.photo1 {
+    position: absolute;
+    width: 100%;
+    height: 750px;
+}
+.pic3 {
+    width: 700px;
+    height: 700px;
+    left: 31.5%;
+    position: absolute;
+}
+.t-p {
+    width: 100%;
+    height: 43px;
+    position: absolute;
+    top: 570px;
+    font-size: 16px;
+    letter-spacing: 1.65px;
+    left: 10px;
+    font-weight: 200;
+    font-style: normal;
+    color: #4b4b4b;
+}
+.t-h {
+    width: 100%;
+    height: 35px;
+    position: absolute;
+    top: 600px;
+    left: 0;
+}
+.t-h > h2 {
+    font-size: 30px;
+    letter-spacing: 4px;
+    font-variant-ligatures: none;
+    font-weight: 200;
+    font-style: normal;
+    color: #4b4b4b;
+}
+.s-box3 {
+    display: inline-block;
+    background-color: black;
+    width: 150px;
+    height: 40px;
+    color: white;
+    position: absolute;
+    top: 685px;
+    left: 46.5%;
+}
+.s-box3  > p{
+    position: absolute;
+    top: 28%;
+    left: 28%;
+    font-size: 12px;
+}
+.f-i2 {
+    position: absolute;
+    top: 648px;
+    left: 50%;
+} */
+.big-photo {
+    width: 100%;
+    height: 2000px;
+    position: relative;
+    background-color: #e7e7e7;
+}
+#dd {
+    width: 1366px;
+    height: 1643px;
+    background-image: url("../imgs/mirror.avif");
+    position: absolute;
+    top: -50px;
+    left: 11%;
+}
+.f-dd {
+    width: 180px;
+    height: 437px;
+    background-color: #f5f5f5;
+    position: absolute;
+    top: 69px;
+    right: 63px;
+
+}
+.s-sec {
+    width: 180px;
+    height: 387px;
+}
+.s-sec > div {
+    padding-top: 40px;
+    text-align: center;
+}
+.s-sec > div > img {
+    width: 80px;
+    height: 80px;
+}
+.s-sec > p {
+    display: block;
+    text-align: center;
+    padding: 10px;
+}
+.s-sec > p:nth-child(2) {
+    margin-top: 10px;
+    margin-left: 30px;
+    width: 120px;
+    font-size: 18px;
+    font-weight: 200;
+}
+.s-sec > p:nth-child(3) {
+    font-size: 13px;
+    font-weight: 400;
+    color:#666;
+    line-height: 1.4em;
+    width: 120px;
+    height: 78px;
+    margin: 0 auto;
+}
+.s-sec > div {
+    padding-top: 40px;
+    text-align: center;
+}
+.s-sec > div > img {
+    width: 80px;
+    height: 80px;
+}
+.link {
+    text-align: center;
+    margin: -5px;
+    font-size: 12px;
+}
+.link:hover{
+    color: #999;
+}
+.s-dd {
+    width: 180px;
+    height: 342px;
+    background-color: #f5f5f5;
+    position: absolute;
+    top: 690px;
+    left: 65px;
+}
+.t-sec {
+    width: 100px;
+    height: 46px;
+    font-size: 20px;
+}
+.t-sec > p {
+    display: block;
+    text-align: center;
+    padding: 10px;
+}
+.t-sec > p:nth-child(2) {
+    font-size: 18px;
+    width: 140px;
+    height: 23px;
+    margin-left: 20px;
+    
+}
+.t-sec > p:nth-child(3) {
+    font-style: normal;
+    font-size: 13px;
+    font-weight: 400;
+    color:#666;
+    line-height: 1.4em;
+    width: 130px;
+    height: 78px;
+    margin-left: 25px;
+    margin-top: 20px;
+}
+.t-sec > div {
+    padding-top: 40px;
+    padding-left: 50px;
+}
+.t-sec > div > img {
+    width: 80px;
+    height: 80px;
+}
+.link2 {
+    padding-top: 230px;
+    text-align: center;
+    font-size: 12px;
+    color: #1b1b1b;
+}
+.link2:hover{
+    color: #999;
+}
+.t-dd {
+    width: 180px;
+    height: 362px;
+    background-color: #f5f5f5;
+    position: absolute;
+    top: 1230px;
+    right: 65px;
+}
+.sec-sec {
+    width: 100px;
+    height: 46px;
+    font-size: 20px;
+}
+.sec-sec > p {
+    display: block;
+    text-align: center;
+    padding: 10px;
+}
+.sec-sec > p:nth-child(2) {
+    font-size: 18px;
+    width: 140px;
+    height: 23px;
+    margin-left: 20px;
+    
+}
+.sec-sec > p:nth-child(3) {
+    font-style: normal;
+    font-size: 13px;
+    font-weight: 400;
+    color:#666;
+    line-height: 1.4em;
+    width: 130px;
+    height: 78px;
+    margin-left: 25px;
+    margin-top: 20px;
+}
+.sec-sec > div {
+    padding-top: 40px;
+    padding-left: 50px;
+}
+.sec-sec > div > img {
+    width: 80px;
+    height: 80px;
+}
+.link3 {
+    padding-top: 250px;
+    text-align: center;
+    font-size: 12px;
+    color: #1b1b1b;
+}
+.link3:hover{
+    color: #999;
+}
+#gift {
+    width: 980px;
+    height: 185px;
+    position: absolute;
+    bottom: 35px;
+    left: 400px;
+}
+.s-gift1 > p {
+    font-size: 13px;
+    position: absolute;
+    top: -140px;
+    left: 424px;
+    font-weight: 200;
+    font-style: normal;
+    color: #4b4b4b;
+}
+.s-gift1 > h2 {
+    position: absolute;
+    top: -115px;
+    left: 330px;
+    font-size: 36px;
+    font-weight: 200;
+    font-style: normal;
+    letter-spacing: 4px;
+}
+.s-i {
+    position: absolute;
+    top: -65px;
+    left: 452px;
+}
+.s-gift2 {
+    display: inline-block;
+    background-color: black;
+    width: 150px;
+    height: 40px;
+    color: white;
+    position: absolute;
+    top: -30px;
+    left: 388px;
+}
+.s-gift2 > p {
+    position: absolute;
+    left: 28px;
+    top: 11px;
+    font-size: 12px;
+}
+.s-gift2:hover{
+    background-color: #313131;
+}
+#second-main {
+    width: 100%;
+    height: 2300px;
+}
+#l-sec {
+    padding-top: 10px;
+    position: absolute;
+    width: 98%;
+    height: 2700px;
+    overflow: hidden;
+    background-color: #e7e7e7;
+    top: 2817px;
+    left: 1%;
+}
+.photo4 {
+    width: 100%;
+    height: 700px;
+}
+.photo4 > div > img{
+    position: absolute;
+    width: 700px;
+    height: 700px;
+    left: 30%;
+}
+.l-p {
+    width: 100%;
+    height: 42px;
+    position: absolute;
+    top: 22%;
+    left: 48%;
+    font-weight: 200;
+    font-style: normal;
+    display: block;
+    font-size: 15px;
+    line-height: 20px;
+}
+.l-h > h2 {
+    text-align: center;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 30px;
+    line-height: 1.2;
+}
+.l-h{
+    width: 100%;
+    height: 43px;
+    position: absolute;
+    top: 23.3%;
+}
+.l-i {
+    position: absolute;
+    top: 25%;
+    left: 50.2%;
+}
+.l-box1 {
+    display: inline-block;
+    background-color: black;
+    color: white;
+    width: 154px;
+    height: 40px;
+    position: absolute;
+    top: 26.5%;
+    left: 46.4%;
+}
+.l-box1 > p {
+    position: absolute;
+    top: 30%;
+    left: 28%;
+    font-size: 12px;
+}
+.l-box1:hover {
+    background-color: #313131;
+}
+#t-sec {
+    position: absolute;
+    bottom: 20%;
+    left: 1%;
+    width: 100%;
+    height: 672px;
+    overflow: hidden;
+}
+#t-sec > img {
+    width: 98%;
+}
+.f-per {
+    width: 176px;
+    height: 272px;
+    position: absolute;
+    bottom: 30%;
+    left: 45%;
+    background-color: white;
+}
+.f-per > div:nth-child(1) {
+    font-weight: 200;
+    font-style: normal;
+    color: #4b4b4b;
+    font-size: 25px;
+    text-align: center;
+    margin: 1.5em 0.25em 1em;
+}
+.f-per > div:nth-child(2) {
+    font-weight: 400;
+    color: #666;
+    font-size: 14px;
+    line-height: 1.4em;
+    text-align: center;
+    margin: 0 auto 1.5em;
+    width: 125px;
+}
+.s-per {
+    position: absolute;
+    top: 400px;
+    left: 835px;
+}
+.s-per > p {
+    font-weight: 400;
+    font-size: 12px;
+}
+.s-per:hover {
+    color: #999;
+}
+#last-sec {
+        width: 98%;
+        height: 500px;
+        position: absolute;
+        bottom: 500px;
+        left: 1%;
+}
+#second-header {
+    width: 98%;
+    height: 80px;
+}
+#second-header > h2 {
+    position: absolute;
+    left: 780px;
+    line-height: 100px;
+    font-weight: 200;
+    font-size: 36px;
+}
+#second-header > h2::after {
+    border-top: 1px solid #999;
+    bottom: 15px;
+    content: "";
+    left: 49.2%;
+    margin-left: -73px;
+    position: absolute;
+    width: 146px;   
+}
+#small-section {
+    position: relative;
+    width: 98%;
+    height: 1000px;
+    top: 15%;
+    left: 1%;
+}
+#p-zone{
+    position: absolute;
+    width: 100%;
+    height: 1000px;
+}
+#p-zone  h3 {
+    font-weight: 200;
+    font-style: normal;
+    font-size: 19px;
+    color: #4b4b4b;
+}
+.zone1 {
+    width: 350px;
+    height: 300px;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    left: 20%;
+}
+.zone1 > h3 {
+    position: absolute;
+    width: 300px;
+    padding-top: 40px;
+    left: 20px;
+}
+.f-zone {
+    position: absolute;
+    top: 103%;
+    left: 13%;
+    width: 250px;
+    height: 30px;
+    font-size: 14px;
+}
+.f-zone:hover {
+    color: #999;
+}
+.zone2 {
+    position: absolute;
+    width: 350px;
+    height: 300px;
+    position: absolute;
+    text-align: center;
+    top: 40%;
+    left: 20%;
+}
+.zone2 > h3 {
+    padding-top: 40px;
+}
+.s-zone {
+    padding-top: 10px;
+    font-size: 14px;
+}
+.s-zone:hover {
+    color: #999;
+}
+.zone3 {
+    position: absolute;
+    width: 100px;
+    height: 500px;
+    text-align: center;
+    top: 0;
+    left: 42%;
+}
+.zone3 > h3 {
+    padding-top: 40px;
+    width: 300px;
+    height: 30px;
+    left: 20%;
+    position: absolute;
+}
+.t-zone {
+    position: absolute;
+    bottom: -41%;
+    left: 118%;
+    width: 100px;
+    font-size: 14px;
+}
+.t-zone:hover {
+    color: #999;
+}
+.zone4{
+    width: 350px;
+    height: 300px;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    left: 64%;
+}
+.zone4 > h3 {
+    padding-top: 40px;
+}
+.fourth-zone{
+    padding-top: 10px;
+    font-size: 14px;
+}
+.fourth-zone:hover {
+    color: #999;
+}
+.zone5{
+    position: absolute;
+    width: 350px;
+    height: 300px;
+    text-align: center;
+    top: 40%;
+    left: 64%;
+}
+.zone5 > h3 {
+    padding-top: 40px;
+}
+.fifth-zone {
+    padding-left: 6px;
+    padding-top: 10px;
+    font-size: 14px;
+}
+.fifth-zone:hover {
+    color: #999;
+}
+footer {
+    margin-top: 50px;
+    width: 100%;
+    height: 500px;
+    background-color: #1b1b1b;
+    position: relative;
+}
+#special, #special2, #special3, #special4 {
+    color: #999;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+#special {
+    position: absolute;
+    top: 50px;
+    left: 400px;
+}
+.u-special {
+    position: absolute;
+    top: 100px;
+    left: 400px;
+    width: 150px;
+}
+.u-special > li {
+    font-weight: 400;
+    padding-top: 5px;
+}
+#special2 {
+    position: absolute;
+    top: 50px;
+    left: 600px;
+}
+.u-special2 {
+    position: absolute;
+    top: 100px;
+    left: 600px;
+}
+.u-special2 > li {
+    font-weight: 400;
+    padding-top: 5px;
+}
+#special3 {
+    position: absolute;
+    top: 50px;
+    left: 800px;
+}
+.u-special3 {
+    position: absolute;
+    top: 100px;
+    left: 800px;
+}
+.u-special3 > li {
+    font-weight: 400;
+    padding-top: 5px;
+}
+#special4 {
+    position: absolute;
+    top: 50px;
+    left: 1000px;
+}
+.u-special4 {
+    position: absolute;
+    top: 100px;
+    left: 1000px;
+}
+.u-special4 > li {
+    font-weight: 400;
+    padding-top: 5px;
+}
+#label {
+    position: absolute;
+    color: #999;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    left: 1200px;
+    top: 50px;
+}
+#search {
+    position: absolute;
+    top: 100px;
+    left: 1200px;
+}
+#search ::placeholder {
+    color: white;
+    background-color: black;
+}
+#pp {
+    width: 735px;
+    height: 80px;
+    color: #999;
+    font-size: 12px;
+    font-weight: 400;
+    position: absolute;
+    bottom: 50px;
+    left: 400px;
+}
+#pp > p {
+    line-height: 20px;
+}
+#replace {
+    width: 100%;
+    height: 60px;
+    background-color: #000;
+    position: fixed;
+    opacity: 0;
+    top: 0;
+    
+}
+#replace ul {
+    display: flex;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #c4c4c4;
+}
+#replace ul:nth-child(1) {
+    width: 93px;
+    height: 18px;
+    position: absolute;
+    top: 30%;
+    left: 2%;
+}
+#replace ul:nth-child(1) > li {
+    padding: 5px;
+}
+#replace ul:nth-child(2) {
+    width: 50%;
+    height: 40px;
+    position: absolute;
+    top: 20%;
+    left: 32%;
+}
+#replace ul:nth-child(2) > li {
+    padding: 10px;
+}
+#replace ul:nth-child(3){
+    width: 100px;
+    height: 40px;
+    position: absolute;
+    top: 20%;
+    right: 3%;
+}
+#replace ul:nth-child(3) > li {
+    padding: 10px;
+}
